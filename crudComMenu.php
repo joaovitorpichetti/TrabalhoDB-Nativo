@@ -2,7 +2,7 @@
 /**
  *
  * Este script demonstra a Parte 2 (Nativa) com uma estrutura
- * de banco de dados mais simples (1:N), conforme solicitado.
+ * de banco de dados mais simples.
  *
  * TABELAS:
  * - editoras (id, nome, cnpj)
@@ -34,7 +34,7 @@ try {
 // --- LOOP PRINCIPAL DO MENU ---
 while (true) {
 
-    // Menu simplificado. Removemos tudo sobre "Autores"
+    // Menu simplificado.
     echo "====================================\n";
     echo "==         MENU INTERATIVO        ==\n";
     echo "====================================\n";
@@ -235,7 +235,7 @@ while (true) {
             echo "Digite o NOVO ano do livro: ";
             $novoAno = trim(fgets(STDIN));
 
-            // SIMPLIFICADO: Apenas atualizamos o texto do autor
+            // Apenas atualizamos o texto do autor
             echo "Digite o NOVO nome do Autor (texto): ";
             $novoAutorTexto = trim(fgets(STDIN));
 
@@ -268,9 +268,6 @@ while (true) {
             echo "Digite o ID do livro que deseja excluir: ";
             $id = trim(fgets(STDIN));
 
-            // SIMPLIFICADO: Sem transação!
-            // Como o livro não está mais em uma tabela pivô,
-            // podemos excluí-lo diretamente.
             try {
                 $sql = "DELETE FROM livros WHERE id = ?";
                 $stmt = $pdo->prepare($sql);
