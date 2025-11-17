@@ -66,4 +66,6 @@ Com o banco de dados criado, você pode executar o projeto.
 
 ## 🧑‍💻 Autores
 
-* Aluno 1 João Vitor do Amaral Pichetti
+* Aluno 1: João Vitor do Amaral Pichetti
+* Aluno 2: Marco Antonio Zamboni Acosta
+* Aluno 3: Nícolas Bitencourt Boeira
